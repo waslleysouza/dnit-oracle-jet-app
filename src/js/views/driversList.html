@@ -1,0 +1,66 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-applayout-fixed-top">
+  <header role="banner" class="oj-hybrid-applayout-header">
+    <div class="oj-flex-bar-start">
+      <button id="navDrawerBtn" data-bind="click: $root.toggleDrawer,
+            ojComponent: {component:'ojButton', chroming: 'half',
+            display: 'icons', label: 'Navigation Drawer',
+            icons: {start: 'oj-fwk-icon oj-fwk-icon-hamburger'}}">
+      </button>
+    </div>
+    <div class="oj-hybrid-applayout-bar-title">
+      <h1 class="oj-hybrid-applayout-header-title" data-bind="text: 'Indicação de Condutor Infrator'"></h1>
+    </div>
+  </header>
+</div>
+ 
+<div class="oj-applayout-content">
+  <div role="main" class="oj-hybrid-applayout-content">
+
+    <button id="addDriver" class="demo-fab" data-bind="ojComponent: {component:'ojButton',
+              label: 'Adicionar Condutor', display: 'icons', chroming: 'half',
+              icons: {start: 'oj-fwk-icon demo-add-icon'}},
+              click: goToAddDriver">
+    </button>
+
+    <ul id="driversListView" class="demo-no-padding-li" aria-label="drivers list"
+      data-bind="ojComponent: { component: 'ojListView',
+                                scrollPolicyOptions: { scroller: scrollElem },
+                                data: driversTableData,
+                                selectionMode: 'single',
+                                item: {template: 'template'},
+                                optionChange: selectHandler,
+                                ready: handleReady,
+                                destroy: handleDestroy,
+                                translations: {msgFetchingData: '', msgNoData: ''},
+                                rootAttributes: {style: 'width:100%;overflow-x:hidden;', id: 'driversListViewContainer'}}"></ul>
+
+  </div>
+</div>
+
+<script type="text/html" id="template">
+  <li data-bind="attr: {id: $root.id}, css: {'demo-item-not-cached': !cached}" class="demo-item-marker">
+    <div class="oj-offcanvas-outer-wrapper demo-overflow-control">
+      <div class="oj-offcanvas-inner-wrapper">
+        <div class="oj-flex-bar oj-sm-flex-wrap-nowrap oj-hybrid-padding">
+          <div class="oj-flex-bar-middle oj-flex oj-sm-flex-direction-column oj-sm-flex-wrap-nowrap oj-sm-justify-content-center">
+            <div class="oj-flex-bar">
+              <div class="oj-flex-bar-start demo-incidents-list-item-problem demo-dont-break-out" data-bind="text: violationNumber +' - '+ name, attr: {id: id+'ViolationNumber'}, style: {fontWeight: 'normal'}"></div>
+            </div>
+            <div class="oj-flex-bar">
+	      <div class="oj-flex-bar-start demo-incidents-list-item-customer" data-bind="text: $parent.statusLabel(statusObservable()).toUpperCase(), attr: {id: id+'Status'}, style: {color: $parent.statusColor(statusObservable())}"></div>
+              <div class="oj-flex-bar-end demo-incidents-list-item-customer demo-flex-zero" data-bind="text: $root.appUtilities.formatTimeStamp(createdOn).date, attr: {id: id+'TimeStamp'}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</script>

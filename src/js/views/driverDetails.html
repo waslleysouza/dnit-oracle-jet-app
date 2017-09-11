@@ -1,0 +1,59 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<div class="oj-applayout-fixed-top">
+    <header id="custDetailsHeader" role="banner" class="oj-flex-bar oj-hybrid-applayout-header oj-sm-align-items-center" data-bind="ojModule: driverDetailsHeaderSettings"></header>
+</div>
+
+<div class="oj-applayout-content">
+    <div role="main" class="oj-hybrid-applayout-content demo-solid-bg">
+        <div data-bind="with: driverData">
+            <div class="oj-form-layout">
+                <div class="oj-form oj-hybrid-padding">
+                    <div class="oj-form-control-group" role="group">
+                        
+                        <div class="oj-flex-bar demo-profile-line-wrapper">
+                            <div class="demo-profile-item-content oj-flex-bar-middle">
+                                <label id="customerFirstNameLabel">Nro. do Auto de Infração</label>
+                                <h2 id="customerName" class="demo-customer-name" data-bind="text: violationNumber"></h2>
+                            </div>
+                        </div>
+
+                        <div class="oj-flex-bar demo-profile-line-wrapper">
+                            <div class="demo-profile-item-content oj-flex-bar-middle">
+                                <label id="customerLastNameLabel">Nome do Condutor Infrator</label>
+                                <h2 id="customerName" class="demo-customer-name" data-bind="text: name"></h2>
+                            </div>
+                        </div>
+
+                        <div class="oj-flex-bar demo-profile-line-wrapper">
+                            <div class="demo-profile-item-content oj-flex-bar-middle">
+                                <label id="customerLastNameLabel">CPF</label>
+                                <h2 id="customerName" class="demo-customer-name" data-bind="text: doc1"></h2>
+                            </div>
+                        </div>
+
+                        <div class="oj-flex-bar demo-profile-line-wrapper">
+                            <div class="demo-profile-item-content oj-flex-bar-middle">
+                                <label id="customerLastNameLabel">Nro. Carteira de Habilitação</label>
+                                <h2 id="customerName" class="demo-customer-name" data-bind="text: doc2"></h2>
+                            </div>
+                        </div>
+
+                        <div class="oj-flex-bar demo-profile-line-wrapper">
+                            <div class="demo-profile-item-content oj-flex-bar-middle">
+                                <label id="customerLastNameLabel">Celular</label>
+                                <h2 id="customerName" class="demo-customer-name" data-bind="text: mobile"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

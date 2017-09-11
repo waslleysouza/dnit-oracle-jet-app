@@ -1,0 +1,36 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div>
+  <div class="oj-applayout-fixed-top">
+    <header role="banner" class="oj-hybrid-applayout-header-no-border demo-ios-semi-transparent-bg" data-bind="ojModule: incidentsHeaderSettings">
+    </header>
+
+    <div role="navigation" class="oj-hybrid-applayout-navbar-page demo-ios-semi-transparent-bg">
+      <div id="incidentsNavTabs" class="demo-nav-tabs" data-bind="ojComponent:{component: 'ojNavigationList', navigationLevel: 'page', selection: router.stateId, edge: 'top', optionChange: navBarChange }">
+        <ul>
+          <li id="tabdashboard">
+            <a href="#">Painel</a>
+          </li>
+          <li id="tablist">
+            <a href="#">Meus Recursos</a>
+          </li>
+          <!--li id="tabmap">
+            <a href="#">Mapa</a>
+          </li-->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Incidents View Content -->
+<!-- ko if: router.stateId() -->
+<div data-bind="ojModule: moduleConfig()"></div>
+<!-- /ko -->

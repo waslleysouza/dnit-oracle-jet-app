@@ -1,0 +1,88 @@
+{
+  "revNum": 1,
+  "count": 2,
+  "result": [
+    {
+      "id": "dri-105",
+      "violationNumber": "E123456789",
+      "name": "Carlos Silva",
+      "doc1": "12345678900",
+      "doc2": "11223345",
+      "mobile": "11987652255",
+      "problem": "A notificação entregue fora do prazo estabelecido por lei",
+      "description": "A notificação entregue fora do prazo estabelecido por lei",
+      "category": "appliance",
+      "picture": null,
+      "status": "accepted",
+      "priority": "normal",
+      "createdOn": "2016-07-25T09:00:41+00:00",
+      "lastUpdatedOn": "2016-07-31T09:00:41+00:00",
+      "customerId": "cus-103",
+      "_technicianUsername": "hcr",
+      "locationId": "loc-3",
+      "read": true,
+      "revNum": 1,
+      "activitiesRevNum": 1,
+      "customer": {
+        "id": "cus-103",
+        "username": "rbarker",
+        "firstName": "Ricky",
+        "lastName": "Barker",
+        "locationId": "loc-3",
+        "mobile": "+16505067000",
+        "home": "+15105552121",
+        "email": "rbarker@somewhere.com",
+        "role": "Customer",
+        "revNum": 1
+      },
+      "location": {
+        "formattedAddress": "200 First Street, Livermore, CA 94566 USA",
+        "latitude": "37.660406",
+        "longitude": "-121.876038",
+        "id": "loc-3",
+        "revNum": 1
+      }
+    },
+    {
+      "id": "dri-106",
+      "violationNumber": "E987654321",
+      "name": "Joana Silva",
+      "doc1": "55566677799",
+      "doc2": "12346644",
+      "mobile": "11998870088",
+      "problem": "A notificação entregue fora do prazo estabelecido por lei",
+      "description": "A notificação entregue fora do prazo estabelecido por lei",
+      "category": "appliance",
+      "picture": null,
+      "status": "open",
+      "priority": "normal",
+      "createdOn": "2017-07-15T09:00:41+00:00",
+      "lastUpdatedOn": "2017-07-15T09:00:41+00:00",
+      "customerId": "cus-103",
+      "_technicianUsername": "hcr",
+      "locationId": "loc-3",
+      "read": true,
+      "revNum": 1,
+      "activitiesRevNum": 1,
+      "customer": {
+        "id": "cus-103",
+        "username": "rbarker",
+        "firstName": "Ricky",
+        "lastName": "Barker",
+        "locationId": "loc-3",
+        "mobile": "+16505067000",
+        "home": "+15105552121",
+        "email": "rbarker@somewhere.com",
+        "role": "Customer",
+        "revNum": 1
+      },
+      "location": {
+        "formattedAddress": "200 First Street, Livermore, CA 94566 USA",
+        "latitude": "37.660406",
+        "longitude": "-121.876038",
+        "id": "loc-3",
+        "revNum": 1
+      }
+    }
+  ]
+}

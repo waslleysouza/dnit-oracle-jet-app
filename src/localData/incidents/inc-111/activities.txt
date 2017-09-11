@@ -1,0 +1,42 @@
+{ "activities": [
+  {
+    "firstName": "DNIT",
+    "lastName": "Online",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Field Service",
+    "createdOn": "2015-07-25T09:15:00+00:00",
+    "comment": "Recurso recebido. Responderemos em até 48 horas.",
+    "picture": null,
+    "id": "act-121"
+  },
+  {
+    "firstName": "DNIT",
+    "lastName": "Online",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Field Service",
+    "createdOn": "2015-07-25T09:16:00+00:00",
+    "comment": "Situação alterada para 'Em Análise'.",
+    "picture": null,
+    "id": "act-122"
+  },
+  {
+    "firstName": "DNIT",
+    "lastName": "Online",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Field Service",
+    "createdOn": "2015-07-27T19:15:00+00:00",
+    "comment": "Recurso indeferido. Motivo: Verificamos que a via está totalmente sinalizada.",
+    "picture": "http://s2.glbimg.com/XNvKm9hIG5iZS7Bk-mILArEWNxc=/300x225/s.glbimg.com/jo/g1/f/original/2013/04/06/sinalizacao.jpg",
+    "id": "act-123"
+  },
+  {
+    "firstName": "DNIT",
+    "lastName": "Online",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Field Service",
+    "createdOn": "2015-07-27T19:16:00+00:00",
+    "comment": "Situação alterada para 'Indeferido'",
+    "picture": null,
+    "id": "act-124"
+  }
+]}

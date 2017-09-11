@@ -1,0 +1,65 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-form-layout" data-bind="with: $parent.newIncidentModel">
+	<div class="oj-form">
+		<div class="oj-flex">
+			<div class="oj-flex-item">
+				<label id="categoryLabel">TIPO DE ALEGAÇÃO</label>
+				<div id="categoryRadioSet" aria-labelledby="categoryLabel" class='oj-radioset-no-chrome' data-bind="ojComponent: { component: 'ojRadioset', value: category, required: true }">
+          <span class="oj-choice-item">
+            <input id="general" type="radio" name="category" value="general">
+            <label for="general">Falta de sinalização</label>
+          </span>
+
+          <span class="oj-choice-item">
+            <input id="appliance" type="radio" name="category" value="appliance">
+            <label for="appliance">Notificação entregue fora do prazo</label>
+          </span>
+          <span class="oj-choice-item">
+            <input id="electrical" type="radio" name="category" value="electrical">
+            <label for="electrical">Aferição do Radar / Balança</label>
+          </span>
+          <span class="oj-choice-item">
+            <input id="heatingcooling" type="radio" name="category" value="heatingcooling">
+            <label for="heatingcooling">Outros</label>
+          </span>
+          <!--span class="oj-choice-item">
+            <input id="plumbing" type="radio" name="category" value="plumbing">
+            <label for="plumbing">Plumbing</label>
+          </span-->
+				</div>
+			</div>
+		</div>
+		<div class="oj-flex">
+			<div class="oj-flex-item">
+				<label id="problemLabel" class="profileLabel">DESCRIÇÃO</label>
+				<textarea id="problem-input" rows="5" aria-labelledby="problemLabel" type="text" placeholder="Descreva sua alegação." data-bind="ojComponent: {component: 'ojTextArea', value: problem, required: true}"/>
+			</div>
+		</div>
+		<!--div class="oj-flex">
+			<div class="oj-flex-item">
+				<label id="priorityLabel">PRIORITY</label>
+				<div id="priorityRadioSet" aria-labelledby="priorityLabel" class='oj-radioset-no-chrome' data-bind="ojComponent: { component: 'ojRadioset', value: priority, required: true }">
+ 	        <span class="oj-choice-item">
+            <input id="high" type="radio" name="priority" value="high">
+            <label for="high">High</label>
+          </span>
+          <span class="oj-choice-item">
+            <input id="normal" type="radio" name="priority" value="normal">
+            <label for="normal">Normal</label>
+          </span>
+          <span class="oj-choice-item">
+            <input id="low" type="radio" name="priority" value="low">
+            <label for="low">Low</label>
+          </span>
+				</div>
+			</div>
+		</div-->
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<p class="oj-hybrid-padding">Essa é uma etapa opcional. Você pode anexar uma foto a este recurso.</p>
+
+<div style="text-align: center;">
+	<button id="takePhotoBtn" data-bind="click: attachPhoto, ojComponent: { component: 'ojButton', label: 'Anexe uma Foto' }"></button>
+	<div style="position: relative;">
+		<input type="file" aria-hidden="true" class="demo-hide-photo-input" id="upload-incident-pic" accept="image/*">
+	</div>
+</div>
+<div data-bind="visible: $parent.newIncidentModel().picture()" style="position: relative;">
+	<img id="incident-photo" alt="incident photo" data-bind="attr:{src: $parent.newIncidentModel().picture(), width:'100%'}">
+  <!-- ko if: $root.spenSupported() -->
+  <button id="editPhotoBtn" class="oj-button-primary" data-bind="click: function() { return $root.setupPopup($parent.newIncidentModel().picture) }, ojComponent: { component: 'ojButton', icons: {start:'demo-icon demo-icon-font-24 demo-edit-icon-24'}, label: 'Editar', display: 'icons', chroming: 'full' }" style="position: absolute; right:0; top: 0;">Editar</button>
+  <!-- /ko -->
+
+</div>

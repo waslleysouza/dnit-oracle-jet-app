@@ -1,0 +1,38 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+
+<div class="oj-hybrid-applayout-page">
+  <div class="oj-applayout-fixed-top">
+    <header id="incidentHeader" role="banner" class="demo-ios-semi-transparent-bg" data-bind="ojModule: incidentHeaderSettings, css: router.stateId() !== 'priority' && router.stateId() !== 'status' ? 'oj-hybrid-applayout-header-no-border' : 'oj-hybrid-applayout-header'">
+    </header>
+
+  <!-- ko if: router.stateId() !== 'priority' && router.stateId() !== 'status' -->
+    <div role="navigation" class="oj-hybrid-applayout-navbar-page demo-ios-semi-transparent-bg">
+      <div id="incidentTabsNav" class="demo-nav-tabs" data-bind="ojComponent:{component: 'ojNavigationList', navigationLevel: 'page', selection: router.stateId, edge: 'top', drillMode: 'none', optionChange: navBarChange}">
+        <ul>
+          <li id="incidentTabSummary">
+            <a href="#">Resumo</a>
+          </li>
+          <li id="incidentTabActivity">
+            <a href="#">Atividade</a>
+          </li>
+          <!--li id="incidentTabMap">
+            <a href="#">Map</a>
+          </li-->
+        </ul>
+      </div>
+    </div>
+  <!-- /ko -->
+</div>
+
+<div id="incident" class="oj-applayout-content" style="height:100vh">
+  <!-- ko if: router.stateId() -->
+  <div id="incidentMainPage" role="main" class="oj-hybrid-applayout-content" data-bind="ojModule: moduleConfig" style="height:100%;"></div>
+  <!-- /ko -->
+</div>

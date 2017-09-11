@@ -1,0 +1,32 @@
+{ "activities": [
+  {
+    "firstName": "DNIT",
+    "lastName": "Online",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Field Service",
+    "createdOn": "2015-07-25T09:15:00+00:00",
+    "comment": "Recurso recebido. Responderemos em até 48 horas.",
+    "picture": null,
+    "id": "act-116"
+  },
+  {
+    "firstName": "DNIT",
+    "lastName": "Online",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Field Service",
+    "createdOn": "2015-07-25T09:16:00+00:00",
+    "comment": "Situação alterada para 'Em Análise'.",
+    "picture": null,
+    "id": "act-117"
+  },
+  {
+    "firstName": "João",
+    "lastName": "Silva",
+    "userId": "7eabf05b-47f6-43b0-a6fa-27b20a0aed36",
+    "role": "Consultor de Vendas",
+    "createdOn": "2015-07-25T09:19:00+00:00",
+    "comment": "Segue foto tirada da rua.",
+    "picture": "http://s2.glbimg.com/nviw4UJ5UX_YjAjTDqjU8gJUs7A=/s.glbimg.com/jo/g1/f/original/2014/01/14/placas.jpg",
+    "id": "act-118"
+  }
+]}

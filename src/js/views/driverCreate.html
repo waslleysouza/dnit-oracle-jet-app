@@ -1,0 +1,46 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-applayout-fixed-top">
+  <header id="driverCreateHeader" role="banner" class="oj-flex-bar oj-hybrid-applayout-header oj-sm-align-items-center" data-bind="ojModule: driverCreateHeaderSettings()"></header>
+</div>
+
+<div class="oj-applayout-content">
+  <div role="main" class="oj-hybrid-applayout-content">
+    <div class="oj-form-layout">
+      <div class="oj-form oj-hybrid-padding">
+        <div class="oj-form-control-group" role="group" data-bind="with: driver">
+          <div class="demo-profile-item-content">
+            <label id="addFirstNameLabel">Nro. do Auto de Infração</label>
+            <input id="addFirstNameInput" autocapitalize=words aria-labelledby="addFirstNameLabel" data-bind="ojComponent: {component: 'ojInputText', value: violationNumber, required: true}"/>
+          </div>
+
+          <div class="demo-profile-item-content">
+            <label id="addLastNameLabel">Nome do Condutor Infrator</label>
+            <input id="addLastNameInput" autocapitalize=words aria-labelledby="addLastNameLabel" data-bind="ojComponent: {component: 'ojInputText', value: name, required: true}"/>
+          </div>
+            
+          <div class="demo-profile-item-content">
+            <label id="addMobileLabel">CPF</label>
+            <input id="addMobileInput" aria-labelledby="addMobileLabel" data-bind="ojComponent: {component: 'ojInputText', value: doc1, required: true}"/>
+          </div>
+            
+          <div class="demo-profile-item-content">
+            <label id="addHomeLabel">Nro. Carteira de Habilitação</label>
+            <input id="addHomeInput" aria-labelledby="addHomeLabel" data-bind="ojComponent: {component: 'ojInputText', value: doc2, required: true}"/>
+          </div>
+
+          <div class="demo-profile-item-content">
+            <label id="addEmailLabel">Celular</label>
+            <input id="addEmailInput" aria-labelledby="addEmailLabel" data-bind="ojComponent: {component: 'ojInputText', value:mobile, required: true}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
